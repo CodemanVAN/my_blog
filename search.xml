@@ -4,11 +4,24 @@
   
     
     <entry>
+      <title>How to use git</title>
+      <link href="/2021/09/05/Howtousegit/"/>
+      <url>/2021/09/05/Howtousegit/</url>
+      
+        <content type="html"><![CDATA[<p><em><strong>What is git?</strong></em><br><br>A powerful tool for version management. Extremely useful for team cooperate work.<br><br><em><strong>How to use git</strong></em></p><ol><li>Go to download git. Here is the link <a href="https://git-scm.com/">GIt</a>.</li><li>Select correct version for your platform.</li><li>Install it as you like.</li></ol><p><em><strong>Something you should to do after you installed git.</strong></em><br></p><ul><li>Generate a public key for SSH login in GitHub.<ol><li>Press Win+R open command runner. Just like this pic<br><br><img src="/2021/09/05/Howtousegit/commandrunner.jpg"></li><li>Input ‘cmd’ to run command Windows.<br><img src="/2021/09/05/Howtousegit/commandwindows.jpg"></li><li>Text next command.<br><code>ssh-keygen -t rsa -C "your_email@youremail.com"</code><br><br>   Replace <a href="mailto:your_email@youremail.com">your_email@youremail.com</a> with your email.<br>   <br>Press Enter when need you input.</li><li>View local SSH public key file on <code>C:\Users\your username\.ssh</code> folder.<img src="/2021/09/05/Howtousegit/id_rsa%20folder.jpg"></li><li>Open <code>id_rsa.pub</code> file as a notebook.</li><li>copy the content in <code>id_rsa.pub</code> to your GitHub account Setting page. Click there.<img src="/2021/09/05/Howtousegit/gitbub.jpg"></li><li>Click new SSH key, and name it as you like. Paste the content into the input-box. Confirm.</li></ol></li><li>Test whether it work.<ol><li>Repeat 1. and 2. steps.</li><li>Input <br> <code>ssh -T git@github.com</code></li><li>Check whether output contains words successful and your GitHub account name.</li></ol></li></ul>]]></content>
+      
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>Here is my first blog with Hexo</title>
       <link href="/2021/09/04/Here-is-my-first-blog-with-hexo/"/>
       <url>/2021/09/04/Here-is-my-first-blog-with-hexo/</url>
       
-        <content type="html"><![CDATA[<h2 id="Celebration"><a href="#Celebration" class="headerlink" title="Celebration!"></a>Celebration!</h2><p><em>It’s excited that I established my own blog. But I have remember why I want to establish a personal blog. For me not forget the origin heart, I written them down!</em><br><br><em><strong>Why I established this website?</strong></em><br></p><ol><li>Record coding history, write the steps and methods.</li><li>Pratice written English for futrue plan.</li><li>Nourish a good habit for work.</li><li>Build a platform for my literary creation.</li></ol><p><em><strong>Thanking list</strong></em><br><br> <a href="https://hexo.io/zh-cn/">Hexo</a><br><br> <a href="https://github.com/blinkfox/hexo-theme-matery">hexo-theme-matery</a><br><br> <strong>Some articles referred</strong></p><ul><li><a href="https://www.cnblogs.com/xingyunblog/p/8681205.html">https://www.cnblogs.com/xingyunblog/p/8681205.html</a></li><li><a href="https://blog.csdn.net/cungudafa/article/details/104281764">https://blog.csdn.net/cungudafa/article/details/104281764</a></li><li><a href="https://blog.csdn.net/qq_15015743/article/details/108856877">https://blog.csdn.net/qq_15015743/article/details/108856877</a></li></ul><p><em><strong>Thank for the help</strong></em></p>]]></content>
+        <content type="html"><![CDATA[<h2 id="Celebration"><a href="#Celebration" class="headerlink" title="Celebration!"></a>Celebration!</h2><p><em>It’s excited that I established my own blog. But I have remember why I want to establish a personal blog. For me not forget the origin heart, I written them down!</em><br><br><em><strong>Why I established this website?</strong></em><br></p><ol><li>Record coding history, write the steps and methods.</li><li>Pratice written English for futrue plan.</li><li>Nourish a good habit for work.</li><li>Build a platform for my literary creation.</li></ol><p><em><strong>Thanking list</strong></em><br><br> <a href="https://hexo.io/zh-cn/">Hexo</a><br><br> <a href="https://github.com/blinkfox/hexo-theme-matery">hexo-theme-matery</a><br><br> <strong>Some articles referred</strong><br></p><ul><li><a href="https://www.cnblogs.com/xingyunblog/p/8681205.html">https://www.cnblogs.com/xingyunblog/p/8681205.html</a></li><li><a href="https://blog.csdn.net/cungudafa/article/details/104281764">https://blog.csdn.net/cungudafa/article/details/104281764</a></li><li><a href="https://blog.csdn.net/qq_15015743/article/details/108856877">https://blog.csdn.net/qq_15015743/article/details/108856877</a></li></ul><p><em><strong>Thank for the help</strong></em></p>]]></content>
       
       
       
