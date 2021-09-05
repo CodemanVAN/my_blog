@@ -11,6 +11,20 @@
         <content type="html"><![CDATA[<p><em><strong>What is git?</strong></em><br><br>A powerful tool for version management. Extremely useful for team cooperate work.<br><br><em><strong>How to use git</strong></em></p><ol><li>Go to download git. Here is the link <a href="https://git-scm.com/">GIt</a>.</li><li>Select correct version for your platform.</li><li>Install it as you like.</li></ol><p><em><strong>Something you should to do after you installed git.</strong></em><br></p><ul><li>Generate a public key for SSH login in GitHub.<ol><li>Press Win+R open command runner. Just like this pic<br><br><img src="/2021/09/05/Howtousegit/commandrunner.jpg"></li><li>Input ‘cmd’ to run command Windows.<br><img src="/2021/09/05/Howtousegit/commandwindows.jpg"></li><li>Text next command.<br><code>ssh-keygen -t rsa -C "your_email@youremail.com"</code><br><br>   Replace <a href="mailto:your_email@youremail.com">your_email@youremail.com</a> with your email.<br>   <br>Press Enter when need you input.</li><li>View local SSH public key file on <code>C:\Users\your username\.ssh</code> folder.<img src="/2021/09/05/Howtousegit/id_rsa%20folder.jpg"></li><li>Open <code>id_rsa.pub</code> file as a notebook.</li><li>copy the content in <code>id_rsa.pub</code> to your GitHub account Setting page. Click there.<img src="/2021/09/05/Howtousegit/gitbub.jpg"></li><li>Click new SSH key, and name it as you like. Paste the content into the input-box. Confirm.</li></ol></li><li>Test whether it work.<ol><li>Repeat 1. and 2. steps.</li><li>Input <br> <code>ssh -T git@github.com</code></li><li>Check whether output contains words successful and your GitHub account name.</li></ol></li></ul>]]></content>
       
       
+      <categories>
+          
+          <category> Coding </category>
+          
+          <category> Tools </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> GitHub </tag>
+            
+        </tags>
       
     </entry>
     
