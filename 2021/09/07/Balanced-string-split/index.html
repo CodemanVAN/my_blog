@@ -4,7 +4,7 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="How to use git, WhatColdWind">
+    <meta name="keywords" content="Balanced string split, WhatColdWind">
     <meta name="description" content="Here is my personal blog website. Record your life, remember your story">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
@@ -16,7 +16,7 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-    <title>How to use git | WhatColdWind</title>
+    <title>Balanced string split | WhatColdWind</title>
     <link rel="icon" type="image/png" href="/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.css">
@@ -272,12 +272,12 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/20.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/11.jpg')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">How to use git</h1>
+                    <h1 class="description center-align post-title">Balanced string split</h1>
                 </div>
             </div>
         </div>
@@ -391,29 +391,12 @@
             <div class="row tag-cate">
                 <div class="col s7">
                     
-                    <div class="article-tag">
-                        
-                            <a href="/tags/GitHub/">
-                                <span class="chip bg-color">GitHub</span>
-                            </a>
-                        
-                    </div>
+                          <div class="article-tag">
+                            <span class="chip bg-color">No tag</span>
+                          </div>
                     
                 </div>
                 <div class="col s5 right-align">
-                    
-                    <div class="post-cate">
-                        <i class="fas fa-bookmark fa-fw icon-category"></i>
-                        
-                            <a href="/categories/Coding/" class="post-category">
-                                Coding
-                            </a>
-                        
-                            <a href="/categories/Coding/Tools/" class="post-category">
-                                Tools
-                            </a>
-                        
-                    </div>
                     
                 </div>
             </div>
@@ -422,21 +405,21 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-minus fa-fw"></i>Publish Date:&nbsp;&nbsp;
-                    2021-09-05
+                    2021-09-07
                 </div>
                 
 
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-check fa-fw"></i>Update Date:&nbsp;&nbsp;
-                    2021-09-05
+                    2021-09-07
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>Word Count:&nbsp;&nbsp;
-                    175
+                    234
                 </div>
                 
 
@@ -466,31 +449,21 @@
 
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <p><em><strong>What is git?</strong></em><br><br>A powerful tool for version management. Extremely useful for team cooperate work.<br><br><em><strong>How to use git</strong></em></p>
-<ol>
-<li>Go to download git. Here is the link <a target="_blank" rel="noopener" href="https://git-scm.com/">GIt</a>.</li>
-<li>Select correct version for your platform.</li>
-<li>Install it as you like.</li>
-</ol>
-<p><em><strong>Something you should to do after you installed git.</strong></em><br></p>
-<ul>
-<li>Generate a public key for SSH login in GitHub.<ol>
-<li>Press Win+R open command runner. Just like this pic<br><br><img src="/2021/09/05/Howtousegit/commandrunner.jpg"></li>
-<li>Input ‘cmd’ to run command Windows.<br><img src="/2021/09/05/Howtousegit/commandwindows.jpg"></li>
-<li>Text next command.<br><code>ssh-keygen -t rsa -C "your_email@youremail.com"</code><br><br>   Replace <a href="mailto:your_email@youremail.com">your_email@youremail.com</a> with your email.<br>   <br>Press Enter when need you input.</li>
-<li>View local SSH public key file on <code>C:\Users\your username\.ssh</code> folder.<img src="/2021/09/05/Howtousegit/id_rsa%20folder.jpg"></li>
-<li>Open <code>id_rsa.pub</code> file as a notebook.</li>
-<li>copy the content in <code>id_rsa.pub</code> to your GitHub account Setting page. Click there.<img src="/2021/09/05/Howtousegit/gitbub.jpg"></li>
-<li>Click new SSH key, and name it as you like. Paste the content into the input-box. Confirm.</li>
-</ol>
-</li>
-<li>Test whether it work.<ol>
-<li>Repeat 1. and 2. steps.</li>
-<li>Input <br> <code>ssh -T git@github.com</code></li>
-<li>Check whether output contains words successful and your GitHub account name.</li>
-</ol>
-</li>
-</ul>
+                <h1 id="Problem-Desribtion"><a href="#Problem-Desribtion" class="headerlink" title="Problem Desribtion"></a>Problem Desribtion<br></h1><p><em><strong>Balanced strings are those that have an equal quantity of ‘L’ and ‘R’ characters.<br><br>Given a balanced string s, split it in the maximum amount of balanced strings.<br><br>Return the maximum amount of split balanced strings.</strong></em></p>
+<p>&nbsp;</p>
+<p>Example 1:<br><br><code> Input: s = "RLRRLLRLRL" Output: 4 Explanation: s can be split into "RL", "RRLL", "RL", "RL", each substring contains same number of 'L' and 'R'.</code><br><br>Example 2:<br><br><code> Input: s = "RLLLLRRRLR" Output: 3 Explanation: s can be split into "RL", "LLLRRR", "LR", each substring contains same number of 'L' and 'R'.</code><br><br>Example 3:<br><code> Input: s = "LLLLRRRR" Output: 1</code><br><br>Explanation: s can be split into “LLLLRRRR”.<br>Example 4:<br><code> Input: s = "RLRRRLLRLL" Output: 2</code><br><br>Explanation: s can be split into “RL”, “RRRLLRLL”, since each substring contains an equal number of ‘L’ and ‘R’<br>
+&nbsp;</p>
+<p>Constraints:<br><br><code>1 &lt;= s.length &lt;= 1000 s[i] is either 'L' or 'R'. s is a balanced string.</code><br><br>source：力扣（LeetCode）<br><a target="_blank" rel="noopener" href="https://leetcode-cn.com/problems/split-a-string-in-balanced-strings">problem link</a></p>
+<h1 id="My-solution"><a href="#My-solution" class="headerlink" title=" My solution"></a> My solution</h1><p> <em>code</em><br><br> </p><pre class="line-numbers language-python" data-language="python"><code class="language-python"><span class="token keyword">class</span> <span class="token class-name">Solution</span><span class="token punctuation">:</span>
+   <span class="token keyword">def</span> <span class="token function">balancedStringSplit</span><span class="token punctuation">(</span>self<span class="token punctuation">,</span> s<span class="token punctuation">:</span> <span class="token builtin">str</span><span class="token punctuation">)</span> <span class="token operator">-</span><span class="token operator">&gt;</span> <span class="token builtin">int</span><span class="token punctuation">:</span>
+       rcnt<span class="token operator">=</span><span class="token number">0</span><span class="token comment"># Record the count of 'R' have meet.</span>
+       lcnt<span class="token operator">=</span><span class="token number">0</span><span class="token comment"># Record the count of 'L' have meet.</span>
+       ans<span class="token operator">=</span><span class="token number">0</span>
+       <span class="token keyword">for</span> i <span class="token keyword">in</span> s<span class="token punctuation">:</span><span class="token comment"># Ergodic per char in s</span>
+           <span class="token keyword">if</span> i<span class="token operator">==</span><span class="token string">'R'</span><span class="token punctuation">:</span>rcnt<span class="token operator">+=</span><span class="token number">1</span>
+           <span class="token keyword">else</span><span class="token punctuation">:</span>lcnt<span class="token operator">+=</span><span class="token number">1</span>
+           <span class="token keyword">if</span> lcnt<span class="token operator">==</span>rcnt<span class="token punctuation">:</span>ans<span class="token operator">+=</span><span class="token number">1</span><span class="token comment"># If after recorded this char the rcnt equle to lcnt, then mean a new split way found, answer plus 1</span>
+       <span class="token keyword">return</span> ans<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre><br> <em>Ez poroblem. No explanation XD</em><p></p>
 
                 
             </div>
@@ -517,7 +490,7 @@
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="https://whatcoldwind.top/2021/09/05/Howtousegit/">https://whatcoldwind.top/2021/09/05/Howtousegit/</a>
+                    <a href="https://whatcoldwind.top/2021/09/07/Balanced-string-split/">https://whatcoldwind.top/2021/09/07/Balanced-string-split/</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -554,11 +527,7 @@
                 <div class="post-meta__tag-list" style="display: inline-block;">
                     
                         <div class="article-tag">
-                            
-                                <a href="/tags/GitHub/">
-                                    <span class="chip bg-color">GitHub</span>
-                                </a>
-                            
+                            <span class="chip bg-color">No tag</span>
                         </div>
                     
                 </div>
@@ -989,9 +958,48 @@
 <article id="prenext-posts" class="prev-next articles">
     <div class="row article-row">
         
-        <div class="article col s12 m6" data-aos="fade-up">
+        <div class="article col s12 m6" data-aos="fade-up" data-aos="fade-up">
             <div class="article-badge left-badge text-color">
-                <i class="fas fa-chevron-left"></i>&nbsp;Previous</div>
+                <i class="far fa-dot-circle"></i>&nbsp;Current
+            </div>
+            <div class="card">
+                <a href="/2021/09/07/Balanced-string-split/">
+                    <div class="card-image">
+                        
+                        
+                        <img src="/medias/featureimages/11.jpg" class="responsive-img" alt="Balanced string split">
+                        
+                        <span class="card-title">Balanced string split</span>
+                    </div>
+                </a>
+                <div class="card-content article-content">
+                    <div class="summary block-with-text">
+                        
+                            
+                        
+                    </div>
+                    <div class="publish-info">
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2021-09-07
+                            </span>
+                        <span class="publish-author">
+                            
+                            <i class="fas fa-user fa-fw"></i>
+                            Whatcoldwind
+                            
+                        </span>
+                    </div>
+                </div>
+
+                
+            </div>
+        </div>
+        
+        
+        <div class="article col s12 m6" data-aos="fade-up">
+            <div class="article-badge right-badge text-color">
+                Next&nbsp;<i class="fas fa-chevron-right"></i>
+            </div>
             <div class="card">
                 <a href="/2021/09/06/Minium-path-cost-sum/">
                     <div class="card-image">
@@ -1009,9 +1017,9 @@
                         
                     </div>
                     <div class="publish-info">
-                        <span class="publish-date">
-                            <i class="far fa-clock fa-fw icon-date"></i>2021-09-06
-                        </span>
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2021-09-06
+                            </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-bookmark fa-fw icon-category"></i>
@@ -1047,43 +1055,6 @@
                         <span class="chip bg-color">LeetCode</span>
                     </a>
                     
-                </div>
-                
-            </div>
-        </div>
-        
-        
-        <div class="article col s12 m6" data-aos="fade-up">
-            <div class="article-badge right-badge text-color">
-                Next&nbsp;<i class="fas fa-chevron-right"></i>
-            </div>
-            <div class="card">
-                <a href="/2021/09/04/Here-is-my-first-blog-with-hexo/">
-                    <div class="card-image">
-                        
-                        
-                        <img src="/medias/featureimages/6.jpg" class="responsive-img" alt="Here is my first blog with Hexo">
-                        
-                        <span class="card-title">Here is my first blog with Hexo</span>
-                    </div>
-                </a>
-                <div class="card-content article-content">
-                    <div class="summary block-with-text">
-                        
-                            
-                        
-                    </div>
-                    <div class="publish-info">
-                            <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2021-09-04
-                            </span>
-                        <span class="publish-author">
-                            
-                            <i class="fas fa-user fa-fw"></i>
-                            Whatcoldwind
-                            
-                        </span>
-                    </div>
                 </div>
                 
             </div>
