@@ -4,7 +4,7 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="Balanced string split, WhatColdWind">
+    <meta name="keywords" content="IPO, WhatColdWind">
     <meta name="description" content="Here is my personal blog website. Record your life, remember your story">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
@@ -16,7 +16,7 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-    <title>Balanced string split | WhatColdWind</title>
+    <title>IPO | WhatColdWind</title>
     <link rel="icon" type="image/png" href="/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.css">
@@ -272,12 +272,12 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/11.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/16.jpg')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">Balanced string split</h1>
+                    <h1 class="description center-align post-title">IPO</h1>
                 </div>
             </div>
         </div>
@@ -397,6 +397,10 @@
                                 <span class="chip bg-color">LeetCode</span>
                             </a>
                         
+                            <a href="/tags/Greedy-strategy/">
+                                <span class="chip bg-color">Greedy strategy</span>
+                            </a>
+                        
                     </div>
                     
                 </div>
@@ -409,6 +413,10 @@
                                 Daily train
                             </a>
                         
+                            <a href="/categories/Daily-train/Algorithm/" class="post-category">
+                                Algorithm
+                            </a>
+                        
                     </div>
                     
                 </div>
@@ -418,28 +426,28 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-minus fa-fw"></i>Publish Date:&nbsp;&nbsp;
-                    2021-09-07
+                    2021-09-08
                 </div>
                 
 
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-check fa-fw"></i>Update Date:&nbsp;&nbsp;
-                    2021-09-07
+                    2021-09-08
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>Word Count:&nbsp;&nbsp;
-                    234
+                    596
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-clock fa-fw"></i>Read Times:&nbsp;&nbsp;
-                    1 Min
+                    3 Min
                 </div>
                 
 
@@ -462,21 +470,50 @@
 
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h1 id="Problem-Desribtion"><a href="#Problem-Desribtion" class="headerlink" title="Problem Desribtion"></a>Problem Desribtion<br></h1><p><em><strong>Balanced strings are those that have an equal quantity of ‘L’ and ‘R’ characters.<br><br>Given a balanced string s, split it in the maximum amount of balanced strings.<br><br>Return the maximum amount of split balanced strings.</strong></em></p>
-<p>&nbsp;</p>
-<p>Example 1:<br><br><code> Input: s = "RLRRLLRLRL" Output: 4 Explanation: s can be split into "RL", "RRLL", "RL", "RL", each substring contains same number of 'L' and 'R'.</code><br><br>Example 2:<br><br><code> Input: s = "RLLLLRRRLR" Output: 3 Explanation: s can be split into "RL", "LLLRRR", "LR", each substring contains same number of 'L' and 'R'.</code><br><br>Example 3:<br><code> Input: s = "LLLLRRRR" Output: 1</code><br><br>Explanation: s can be split into “LLLLRRRR”.<br>Example 4:<br><code> Input: s = "RLRRRLLRLL" Output: 2</code><br><br>Explanation: s can be split into “RL”, “RRRLLRLL”, since each substring contains an equal number of ‘L’ and ‘R’<br>
+                <p><em><strong>Problem describtion</strong></em><br><br>*Suppose LeetCode will start its IPO soon. In order to sell a good price of its shares to Venture Capital, LeetCode would like to work on some projects to increase its capital before the IPO. Since it has limited resources, it can only finish at most k distinct projects before the IPO. Help LeetCode design the best way to maximize its total capital after finishing at most k distinct projects.<br>*<br><br>You are given n projects where the ith project has a pure profit profits[i] and a minimum capital of capital[i] is needed to start it.<br><br><br>Initially, you have w capital. When you finish a project, you will obtain its pure profit and the profit will be added to your total capital.<br></p>
+<p>Pick a list of at most k distinct projects from given projects to<b> maximize</b> your final capital, and return the final maximized capital.<br><br><br>The answer is guaranteed to fit in a 32-bit signed integer.<br><br>
 &nbsp;</p>
-<p>Constraints:<br><br><code>1 &lt;= s.length &lt;= 1000 s[i] is either 'L' or 'R'. s is a balanced string.</code><br><br>source：力扣（LeetCode）<br><a target="_blank" rel="noopener" href="https://leetcode-cn.com/problems/split-a-string-in-balanced-strings">problem link</a></p>
-<h1 id="My-solution"><a href="#My-solution" class="headerlink" title=" My solution"></a> My solution</h1><p> <em>code</em><br><br> </p><pre class="line-numbers language-python" data-language="python"><code class="language-python"><span class="token keyword">class</span> <span class="token class-name">Solution</span><span class="token punctuation">:</span>
-   <span class="token keyword">def</span> <span class="token function">balancedStringSplit</span><span class="token punctuation">(</span>self<span class="token punctuation">,</span> s<span class="token punctuation">:</span> <span class="token builtin">str</span><span class="token punctuation">)</span> <span class="token operator">-</span><span class="token operator">&gt;</span> <span class="token builtin">int</span><span class="token punctuation">:</span>
-       rcnt<span class="token operator">=</span><span class="token number">0</span><span class="token comment"># Record the count of 'R' have meet.</span>
-       lcnt<span class="token operator">=</span><span class="token number">0</span><span class="token comment"># Record the count of 'L' have meet.</span>
-       ans<span class="token operator">=</span><span class="token number">0</span>
-       <span class="token keyword">for</span> i <span class="token keyword">in</span> s<span class="token punctuation">:</span><span class="token comment"># Ergodic per char in s</span>
-           <span class="token keyword">if</span> i<span class="token operator">==</span><span class="token string">'R'</span><span class="token punctuation">:</span>rcnt<span class="token operator">+=</span><span class="token number">1</span>
-           <span class="token keyword">else</span><span class="token punctuation">:</span>lcnt<span class="token operator">+=</span><span class="token number">1</span>
-           <span class="token keyword">if</span> lcnt<span class="token operator">==</span>rcnt<span class="token punctuation">:</span>ans<span class="token operator">+=</span><span class="token number">1</span><span class="token comment"># If after recorded this char the rcnt equle to lcnt, then mean a new split way found, answer plus 1</span>
-       <span class="token keyword">return</span> ans<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre><br> <em>Ez poroblem. No explanation XD</em><p></p>
+<p>Example 1:<br><br><code> Input: k = 2, w = 0, profits = [1,2,3], capital = [0,1,1] Output: 4</code><br><br>Explanation: <br><br><code>Since your initial capital is 0, you can only start the project indexed 0. After finishing it you will obtain profit 1 and your capital becomes 1. With capital 1, you can either start the project indexed 1 or the project indexed 2. Since you can choose at most 2 projects, you need to finish the project indexed 2 to get the maximum capital. Therefore, output the final maximized capital, which is 0 + 1 + 3 = 4.</code><br><br>Example 2:<br><br><code> Input: k = 3, w = 0, profits = [1,2,3], capital = [0,1,2] Output: 6</code>
+&nbsp;</p>
+<p><em>Constraints:</em><br></p>
+<ul>
+<li>1 &lt;= k &lt;= 105<br></li>
+<li>0 &lt;= w &lt;= 109</li>
+<li>n == profits.length</li>
+<li>n == capital.length</li>
+<li>1 &lt;= n &lt;= 105</li>
+<li>0 &lt;= profits[i] &lt;= 104</li>
+<li>0 &lt;= capital[i] &lt;= 109</li>
+</ul>
+<p>source：力扣（LeetCode）<br><br><a target="_blank" rel="noopener" href="https://leetcode-cn.com/problems/ipo">problem link</a></p>
+<p><em><strong>My solution</strong></em><br><br>Here is my code<br></p>
+<pre class="line-numbers language-python" data-language="python"><code class="language-python"><span class="token keyword">class</span> <span class="token class-name">Solution</span><span class="token punctuation">:</span>
+    <span class="token keyword">def</span> <span class="token function">findMaximizedCapital</span><span class="token punctuation">(</span>self<span class="token punctuation">,</span> k<span class="token punctuation">:</span> <span class="token builtin">int</span><span class="token punctuation">,</span> w<span class="token punctuation">:</span> <span class="token builtin">int</span><span class="token punctuation">,</span> profits<span class="token punctuation">:</span> List<span class="token punctuation">[</span><span class="token builtin">int</span><span class="token punctuation">]</span><span class="token punctuation">,</span> capital<span class="token punctuation">:</span> List<span class="token punctuation">[</span><span class="token builtin">int</span><span class="token punctuation">]</span><span class="token punctuation">)</span> <span class="token operator">-</span><span class="token operator">&gt;</span> <span class="token builtin">int</span><span class="token punctuation">:</span>
+        projects<span class="token operator">=</span><span class="token builtin">sorted</span><span class="token punctuation">(</span><span class="token builtin">list</span><span class="token punctuation">(</span><span class="token builtin">zip</span><span class="token punctuation">(</span>profits<span class="token punctuation">,</span>capital<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token comment"># Set a mapping between profits and capital. And sorted it by profits</span>
+        remained<span class="token operator">=</span><span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token comment"># If current w is not enought for some projects, we will add it to this list</span>
+        cnt<span class="token operator">=</span><span class="token number">0</span><span class="token comment"># Record how many projects we selected</span>
+        n<span class="token operator">=</span><span class="token builtin">len</span><span class="token punctuation">(</span>projects<span class="token punctuation">)</span><span class="token triple-quoted-string string">'''A flag to detect whether no more project to take/can afford any project in remained list. 
+        The method is if last remained length equle current remained length, it's implication is no project is selected in last ergodication. 
+        Time to break ergodication and return answer.'''</span>
+        <span class="token keyword">while</span> k<span class="token operator">&gt;</span>cnt <span class="token keyword">and</span> projects<span class="token punctuation">:</span>
+            p<span class="token operator">=</span>projects<span class="token punctuation">.</span>pop<span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token comment"># Pick the max profit project.</span>
+            <span class="token keyword">if</span> w<span class="token operator">&gt;=</span>p<span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">]</span><span class="token punctuation">:</span><span class="token comment"># Check whether we can afford it.</span>
+                w<span class="token operator">+=</span>p<span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span><span class="token comment"># Yes we can. Time to puls the profit and remove it from project pool.</span>
+                cnt<span class="token operator">+=</span><span class="token number">1</span>
+                projects<span class="token operator">+=</span>remained<span class="token punctuation">[</span><span class="token punctuation">:</span><span class="token punctuation">:</span><span class="token operator">-</span><span class="token number">1</span><span class="token punctuation">]</span><span class="token comment"># Concat the tow list. Do it agian.</span>
+                remained<span class="token operator">=</span><span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token comment"># Clear remained list</span>
+                n<span class="token operator">=</span><span class="token number">0</span><span class="token comment"># Reinit n.</span>
+            <span class="token keyword">else</span><span class="token punctuation">:</span>
+                remained<span class="token punctuation">.</span>append<span class="token punctuation">(</span>p<span class="token punctuation">)</span><span class="token comment"># OH No, we can't afford this project, but maybe we can afford it latter, so let's add it to the remained list.</span>
+        <span class="token keyword">return</span> w<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<h1 id="Explanation"><a href="#Explanation" class="headerlink" title="Explanation"></a>Explanation</h1><ul>
+<li><p><em>This’s a hard problem in leetcode, but it’s easy to figure it out that we can use greedy strategy. It’s can be proved that we always select the project with the max profit in remained list can get the max captial.</em></p>
+</li>
+<li><p>So we can reorder the list so that we can select project with max profit. Zip funtion can map the tow values to a tuple.</p>
+</li>
+<li><p>Just ergodic the list and find out answer.</p>
+</li>
+</ul>
 
                 
             </div>
@@ -503,7 +540,7 @@
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="https://whatcoldwind.top/2021/09/07/Balanced-string-split/">https://whatcoldwind.top/2021/09/07/Balanced-string-split/</a>
+                    <a href="https://whatcoldwind.top/2021/09/08/IPO/">https://whatcoldwind.top/2021/09/08/IPO/</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -543,6 +580,10 @@
                             
                                 <a href="/tags/LeetCode/">
                                     <span class="chip bg-color">LeetCode</span>
+                                </a>
+                            
+                                <a href="/tags/Greedy-strategy/">
+                                    <span class="chip bg-color">Greedy strategy</span>
                                 </a>
                             
                         </div>
@@ -975,9 +1016,10 @@
 <article id="prenext-posts" class="prev-next articles">
     <div class="row article-row">
         
-        <div class="article col s12 m6" data-aos="fade-up">
+        <div class="article col s12 m6" data-aos="fade-up" data-aos="fade-up">
             <div class="article-badge left-badge text-color">
-                <i class="fas fa-chevron-left"></i>&nbsp;Previous</div>
+                <i class="far fa-dot-circle"></i>&nbsp;Current
+            </div>
             <div class="card">
                 <a href="/2021/09/08/IPO/">
                     <div class="card-image">
@@ -995,9 +1037,9 @@
                         
                     </div>
                     <div class="publish-info">
-                        <span class="publish-date">
-                            <i class="far fa-clock fa-fw icon-date"></i>2021-09-08
-                        </span>
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2021-09-08
+                            </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-bookmark fa-fw icon-category"></i>
@@ -1014,6 +1056,7 @@
                         </span>
                     </div>
                 </div>
+
                 
                 <div class="card-action article-tags">
                     
@@ -1036,13 +1079,13 @@
                 Next&nbsp;<i class="fas fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2021/09/06/Minium-path-cost-sum/">
+                <a href="/2021/09/07/Balanced-string-split/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/14.jpg" class="responsive-img" alt="Minium path cost sum">
+                        <img src="/medias/featureimages/11.jpg" class="responsive-img" alt="Balanced string split">
                         
-                        <span class="card-title">Minium path cost sum</span>
+                        <span class="card-title">Balanced string split</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
@@ -1053,21 +1096,13 @@
                     </div>
                     <div class="publish-info">
                             <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2021-09-06
+                                <i class="far fa-clock fa-fw icon-date"></i>2021-09-07
                             </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-bookmark fa-fw icon-category"></i>
                             
-                            <a href="/categories/Algorithm/" class="post-category">
-                                    Algorithm
-                                </a>
-                            
-                            <a href="/categories/Algorithm/Data-struture/" class="post-category">
-                                    Data struture
-                                </a>
-                            
-                            <a href="/categories/Algorithm/Data-struture/Daily-train/" class="post-category">
+                            <a href="/categories/Daily-train/" class="post-category">
                                     Daily train
                                 </a>
                             
@@ -1080,14 +1115,6 @@
                     
                     <a href="/tags/LeetCode/">
                         <span class="chip bg-color">LeetCode</span>
-                    </a>
-                    
-                    <a href="/tags/DP/">
-                        <span class="chip bg-color">DP</span>
-                    </a>
-                    
-                    <a href="/tags/Dynamic-program/">
-                        <span class="chip bg-color">Dynamic program</span>
                     </a>
                     
                 </div>
