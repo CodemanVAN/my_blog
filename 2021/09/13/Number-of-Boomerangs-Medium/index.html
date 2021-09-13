@@ -4,7 +4,7 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="How to use git, WhatColdWind">
+    <meta name="keywords" content="Number of Boomerangs [Medium], WhatColdWind">
     <meta name="description" content="Here is my personal blog website. Record your life, remember your story">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
@@ -16,7 +16,7 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-    <title>How to use git | WhatColdWind</title>
+    <title>Number of Boomerangs [Medium] | WhatColdWind</title>
     <link rel="icon" type="image/png" href="/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.css">
@@ -272,12 +272,12 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/20.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/10.jpg')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">How to use git</h1>
+                    <h1 class="description center-align post-title">Number of Boomerangs [Medium]</h1>
                 </div>
             </div>
         </div>
@@ -393,8 +393,12 @@
                     
                     <div class="article-tag">
                         
-                            <a href="/tags/GitHub/">
-                                <span class="chip bg-color">GitHub</span>
+                            <a href="/tags/LeetCode/">
+                                <span class="chip bg-color">LeetCode</span>
+                            </a>
+                        
+                            <a href="/tags/Hashmap/">
+                                <span class="chip bg-color">Hashmap</span>
                             </a>
                         
                     </div>
@@ -405,12 +409,12 @@
                     <div class="post-cate">
                         <i class="fas fa-bookmark fa-fw icon-category"></i>
                         
-                            <a href="/categories/Coding/" class="post-category">
-                                Coding
+                            <a href="/categories/Daily-train/" class="post-category">
+                                Daily train
                             </a>
                         
-                            <a href="/categories/Coding/Tools/" class="post-category">
-                                Tools
+                            <a href="/categories/Daily-train/Algorithm/" class="post-category">
+                                Algorithm
                             </a>
                         
                     </div>
@@ -422,28 +426,28 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-minus fa-fw"></i>Publish Date:&nbsp;&nbsp;
-                    2021-09-05
+                    2021-09-13
                 </div>
                 
 
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-check fa-fw"></i>Update Date:&nbsp;&nbsp;
-                    2021-09-05
+                    2021-09-13
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>Word Count:&nbsp;&nbsp;
-                    175
+                    437
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-clock fa-fw"></i>Read Times:&nbsp;&nbsp;
-                    1 Min
+                    2 Min
                 </div>
                 
 
@@ -466,31 +470,58 @@
 
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <p><em><strong>What is git?</strong></em><br><br>A powerful tool for version management. Extremely useful for team cooperate work.<br><br><em><strong>How to use git</strong></em></p>
-<ol>
-<li>Go to download git. Here is the link <a target="_blank" rel="noopener" href="https://git-scm.com/">GIt</a>.</li>
-<li>Select correct version for your platform.</li>
-<li>Install it as you like.</li>
-</ol>
-<p><em><strong>Something you should to do after you installed git.</strong></em><br></p>
+                <p><em><strong>Problem Describtion</strong></em><br><br>You are given n points in the plane that are all distinct, where points[i] = [xi, yi]. A boomerang is a tuple of points (i, j, k) such that the distance between i and j equals the distance between i and k (the order of the tuple matters).<br><br>Return the number of boomerangs.<br></p>
+<p>Example 1:<br><br><code> Input: points = [[0,0],[1,0],[2,0]] Output: 2</code><br><br>Explanation: The two boomerangs are [[1,0],[0,0],[2,0]] and [[1,0],[2,0],[0,0]].<br><br>Example 2:<br><br><code> Input: points = [[1,1],[2,2],[3,3]] Output: 2</code><br><br>Example 3:<br><br><code> Input: points = [[1,1]] Output: 0</code><br></p>
+<p>Constraints:</p>
 <ul>
-<li>Generate a public key for SSH login in GitHub.<ol>
-<li>Press Win+R open command runner. Just like this pic<br><br><img src="/2021/09/05/Howtousegit/commandrunner.jpg"></li>
-<li>Input ‘cmd’ to run command Windows.<br><img src="/2021/09/05/Howtousegit/commandwindows.jpg"></li>
-<li>Text next command.<br><code>ssh-keygen -t rsa -C "your_email@youremail.com"</code><br><br>   Replace <a href="mailto:your_email@youremail.com">your_email@youremail.com</a> with your email.<br>   <br>Press Enter when need you input.</li>
-<li>View local SSH public key file on <code>C:\Users\your username\.ssh</code> folder.<img src="/2021/09/05/Howtousegit/id_rsa%20folder.jpg"></li>
-<li>Open <code>id_rsa.pub</code> file as a notebook.</li>
-<li>copy the content in <code>id_rsa.pub</code> to your GitHub account Setting page. Click there.<img src="/2021/09/05/Howtousegit/gitbub.jpg"></li>
-<li>Click new SSH key, and name it as you like. Paste the content into the input-box. Confirm.</li>
-</ol>
-</li>
-<li>Test whether it work.<ol>
-<li>Repeat 1. and 2. steps.</li>
-<li>Input <br> <code>ssh -T git@github.com</code></li>
-<li>Check whether output contains words successful and your GitHub account name.</li>
-</ol>
-</li>
+<li>n == points.length</li>
+<li>1 &lt;= n &lt;= 500</li>
+<li>points[i].length == 2</li>
+<li>-104 &lt;= xi, yi &lt;= 104</li>
+<li>All the points are unique.</li>
 </ul>
+<p><em><strong>My solution</strong></em><br><br><em>CODE</em></p>
+<pre class="line-numbers language-python" data-language="python"><code class="language-python"><span class="token keyword">class</span> <span class="token class-name">Solution</span><span class="token punctuation">:</span>
+    <span class="token keyword">def</span> <span class="token function">numberOfBoomerangs</span><span class="token punctuation">(</span>self<span class="token punctuation">,</span> points<span class="token punctuation">:</span> List<span class="token punctuation">[</span>List<span class="token punctuation">[</span><span class="token builtin">int</span><span class="token punctuation">]</span><span class="token punctuation">]</span><span class="token punctuation">)</span> <span class="token operator">-</span><span class="token operator">&gt;</span> <span class="token builtin">int</span><span class="token punctuation">:</span>
+        n<span class="token operator">=</span><span class="token builtin">len</span><span class="token punctuation">(</span>points<span class="token punctuation">)</span>
+        <span class="token keyword">if</span> n<span class="token operator">&lt;</span><span class="token number">3</span><span class="token punctuation">:</span><span class="token keyword">return</span> <span class="token number">0</span>
+        mp<span class="token operator">=</span><span class="token punctuation">{</span><span class="token punctuation">}</span>
+        ans<span class="token operator">=</span><span class="token number">0</span>
+        <span class="token keyword">for</span> i <span class="token keyword">in</span> <span class="token builtin">range</span><span class="token punctuation">(</span>n<span class="token punctuation">)</span><span class="token punctuation">:</span>
+            <span class="token keyword">for</span> j <span class="token keyword">in</span> <span class="token builtin">range</span><span class="token punctuation">(</span>n<span class="token punctuation">)</span><span class="token punctuation">:</span>
+                <span class="token keyword">if</span> i<span class="token operator">!=</span>j<span class="token punctuation">:</span>
+                    d<span class="token operator">=</span><span class="token punctuation">(</span>points<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span><span class="token operator">-</span>points<span class="token punctuation">[</span>j<span class="token punctuation">]</span><span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token operator">**</span><span class="token number">2</span><span class="token operator">+</span><span class="token punctuation">(</span>points<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">]</span><span class="token operator">-</span>points<span class="token punctuation">[</span>j<span class="token punctuation">]</span><span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token operator">**</span><span class="token number">2</span>
+                    <span class="token keyword">if</span> <span class="token builtin">str</span><span class="token punctuation">(</span>d<span class="token punctuation">)</span> <span class="token keyword">in</span> mp<span class="token punctuation">:</span>
+                        <span class="token keyword">if</span> i <span class="token keyword">in</span> mp<span class="token punctuation">[</span><span class="token builtin">str</span><span class="token punctuation">(</span>d<span class="token punctuation">)</span><span class="token punctuation">]</span><span class="token punctuation">:</span>mp<span class="token punctuation">[</span><span class="token builtin">str</span><span class="token punctuation">(</span>d<span class="token punctuation">)</span><span class="token punctuation">]</span><span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token operator">+=</span><span class="token number">1</span>
+                        <span class="token keyword">else</span><span class="token punctuation">:</span>mp<span class="token punctuation">[</span><span class="token builtin">str</span><span class="token punctuation">(</span>d<span class="token punctuation">)</span><span class="token punctuation">]</span><span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token operator">=</span><span class="token number">1</span>
+                        <span class="token keyword">if</span> j <span class="token keyword">in</span> mp<span class="token punctuation">[</span><span class="token builtin">str</span><span class="token punctuation">(</span>d<span class="token punctuation">)</span><span class="token punctuation">]</span><span class="token punctuation">:</span>mp<span class="token punctuation">[</span><span class="token builtin">str</span><span class="token punctuation">(</span>d<span class="token punctuation">)</span><span class="token punctuation">]</span><span class="token punctuation">[</span>j<span class="token punctuation">]</span><span class="token operator">+=</span><span class="token number">1</span>
+                        <span class="token keyword">else</span><span class="token punctuation">:</span>mp<span class="token punctuation">[</span><span class="token builtin">str</span><span class="token punctuation">(</span>d<span class="token punctuation">)</span><span class="token punctuation">]</span><span class="token punctuation">[</span>j<span class="token punctuation">]</span><span class="token operator">=</span><span class="token number">1</span>
+                    <span class="token keyword">else</span><span class="token punctuation">:</span>mp<span class="token punctuation">[</span><span class="token builtin">str</span><span class="token punctuation">(</span>d<span class="token punctuation">)</span><span class="token punctuation">]</span><span class="token operator">=</span><span class="token punctuation">{</span>i<span class="token punctuation">:</span><span class="token number">1</span><span class="token punctuation">,</span>j<span class="token punctuation">:</span><span class="token number">1</span><span class="token punctuation">}</span>
+        <span class="token keyword">for</span> i <span class="token keyword">in</span> <span class="token builtin">range</span><span class="token punctuation">(</span>n<span class="token punctuation">)</span><span class="token punctuation">:</span>
+            <span class="token keyword">for</span> j <span class="token keyword">in</span> <span class="token builtin">range</span><span class="token punctuation">(</span>n<span class="token punctuation">)</span><span class="token punctuation">:</span>
+                <span class="token keyword">if</span> i<span class="token operator">!=</span>j<span class="token punctuation">:</span>
+                    d<span class="token operator">=</span><span class="token punctuation">(</span>points<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span><span class="token operator">-</span>points<span class="token punctuation">[</span>j<span class="token punctuation">]</span><span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token operator">**</span><span class="token number">2</span><span class="token operator">+</span><span class="token punctuation">(</span>points<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">]</span><span class="token operator">-</span>points<span class="token punctuation">[</span>j<span class="token punctuation">]</span><span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token operator">**</span><span class="token number">2</span>
+                    ans<span class="token operator">+=</span>mp<span class="token punctuation">[</span><span class="token builtin">str</span><span class="token punctuation">(</span>d<span class="token punctuation">)</span><span class="token punctuation">]</span><span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token operator">//</span><span class="token number">2</span><span class="token operator">-</span><span class="token number">1</span>
+        <span class="token keyword">return</span>  ans<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<br>
+Explanation
+===
+*This is a solution. I made the problem more complexer. Just ergodic the pointer list and record the distance to each pointer and conut it in the end of per cycle.*<br>
+
+<p><em><strong>Offical code</strong></em><br></p>
+<pre class="line-numbers language-python" data-language="python"><code class="language-python"><span class="token keyword">class</span> <span class="token class-name">Solution</span><span class="token punctuation">:</span>
+    <span class="token keyword">def</span> <span class="token function">numberOfBoomerangs</span><span class="token punctuation">(</span>self<span class="token punctuation">,</span> points<span class="token punctuation">:</span> List<span class="token punctuation">[</span>List<span class="token punctuation">[</span><span class="token builtin">int</span><span class="token punctuation">]</span><span class="token punctuation">]</span><span class="token punctuation">)</span> <span class="token operator">-</span><span class="token operator">&gt;</span> <span class="token builtin">int</span><span class="token punctuation">:</span>
+        ans <span class="token operator">=</span> <span class="token number">0</span>
+        <span class="token keyword">for</span> p <span class="token keyword">in</span> points<span class="token punctuation">:</span>
+            cnt <span class="token operator">=</span> defaultdict<span class="token punctuation">(</span><span class="token builtin">int</span><span class="token punctuation">)</span>
+            <span class="token keyword">for</span> q <span class="token keyword">in</span> points<span class="token punctuation">:</span>
+                dis <span class="token operator">=</span> <span class="token punctuation">(</span>p<span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span> <span class="token operator">-</span> q<span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span><span class="token punctuation">)</span> <span class="token operator">*</span> <span class="token punctuation">(</span>p<span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span> <span class="token operator">-</span> q<span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span><span class="token punctuation">)</span> <span class="token operator">+</span> <span class="token punctuation">(</span>p<span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">]</span> <span class="token operator">-</span> q<span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">]</span><span class="token punctuation">)</span> <span class="token operator">*</span> <span class="token punctuation">(</span>p<span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">]</span> <span class="token operator">-</span> q<span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">]</span><span class="token punctuation">)</span>
+                cnt<span class="token punctuation">[</span>dis<span class="token punctuation">]</span> <span class="token operator">+=</span> <span class="token number">1</span>
+            <span class="token keyword">for</span> m <span class="token keyword">in</span> cnt<span class="token punctuation">.</span>values<span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">:</span>
+                ans <span class="token operator">+=</span> m <span class="token operator">*</span> <span class="token punctuation">(</span>m <span class="token operator">-</span> <span class="token number">1</span><span class="token punctuation">)</span>
+        <span class="token keyword">return</span> ans<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<p>Author：LeetCode-Solution<br><br>link：<a target="_blank" rel="noopener" href="https://leetcode-cn.com/problems/number-of-boomerangs/solution/hui-xuan-biao-de-shu-liang-by-leetcode-s-lft5/">https://leetcode-cn.com/problems/number-of-boomerangs/solution/hui-xuan-biao-de-shu-liang-by-leetcode-s-lft5/</a><br><br>source：力扣（LeetCode）<br></p>
+<p><em><strong>I’m sorry for the absence in last three days,I participated the 2021CUMCM(China Undergraduate Mathematical Contest in Modeling) contest, so I can’t take time to continue my daily train and blog writting. But I learn a lot from this content and have a good mermory with my teammates. I will keep going with my plan now.</strong></em></p>
 
                 
             </div>
@@ -517,7 +548,7 @@
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="https://whatcoldwind.top/2021/09/05/Howtousegit/">https://whatcoldwind.top/2021/09/05/Howtousegit/</a>
+                    <a href="https://whatcoldwind.top/2021/09/13/Number-of-Boomerangs-Medium/">https://whatcoldwind.top/2021/09/13/Number-of-Boomerangs-Medium/</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -555,8 +586,12 @@
                     
                         <div class="article-tag">
                             
-                                <a href="/tags/GitHub/">
-                                    <span class="chip bg-color">GitHub</span>
+                                <a href="/tags/LeetCode/">
+                                    <span class="chip bg-color">LeetCode</span>
+                                </a>
+                            
+                                <a href="/tags/Hashmap/">
+                                    <span class="chip bg-color">Hashmap</span>
                                 </a>
                             
                         </div>
@@ -989,17 +1024,18 @@
 <article id="prenext-posts" class="prev-next articles">
     <div class="row article-row">
         
-        <div class="article col s12 m6" data-aos="fade-up">
+        <div class="article col s12 m6" data-aos="fade-up" data-aos="fade-up">
             <div class="article-badge left-badge text-color">
-                <i class="fas fa-chevron-left"></i>&nbsp;Previous</div>
+                <i class="far fa-dot-circle"></i>&nbsp;Current
+            </div>
             <div class="card">
-                <a href="/2021/09/06/Minium-path-cost-sum/">
+                <a href="/2021/09/13/Number-of-Boomerangs-Medium/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/14.jpg" class="responsive-img" alt="Minium path cost sum">
+                        <img src="/medias/featureimages/10.jpg" class="responsive-img" alt="Number of Boomerangs [Medium]">
                         
-                        <span class="card-title">Minium path cost sum</span>
+                        <span class="card-title">Number of Boomerangs [Medium]</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
@@ -1009,29 +1045,26 @@
                         
                     </div>
                     <div class="publish-info">
-                        <span class="publish-date">
-                            <i class="far fa-clock fa-fw icon-date"></i>2021-09-06
-                        </span>
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2021-09-13
+                            </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-bookmark fa-fw icon-category"></i>
                             
-                            <a href="/categories/Algorithm/" class="post-category">
-                                    Algorithm
-                                </a>
-                            
-                            <a href="/categories/Algorithm/Data-struture/" class="post-category">
-                                    Data struture
-                                </a>
-                            
-                            <a href="/categories/Algorithm/Data-struture/Daily-train/" class="post-category">
+                            <a href="/categories/Daily-train/" class="post-category">
                                     Daily train
+                                </a>
+                            
+                            <a href="/categories/Daily-train/Algorithm/" class="post-category">
+                                    Algorithm
                                 </a>
                             
                             
                         </span>
                     </div>
                 </div>
+
                 
                 <div class="card-action article-tags">
                     
@@ -1039,12 +1072,8 @@
                         <span class="chip bg-color">LeetCode</span>
                     </a>
                     
-                    <a href="/tags/DP/">
-                        <span class="chip bg-color">DP</span>
-                    </a>
-                    
-                    <a href="/tags/Dynamic-program/">
-                        <span class="chip bg-color">Dynamic program</span>
+                    <a href="/tags/Hashmap/">
+                        <span class="chip bg-color">Hashmap</span>
                     </a>
                     
                 </div>
@@ -1058,13 +1087,13 @@
                 Next&nbsp;<i class="fas fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2021/09/04/Here-is-my-first-blog-with-hexo/">
+                <a href="/2021/09/09/Text-Justification-hard/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/6.jpg" class="responsive-img" alt="Here is my first blog with Hexo">
+                        <img src="/medias/featureimages/16.jpg" class="responsive-img" alt="Text Justification [hard]">
                         
-                        <span class="card-title">Here is my first blog with Hexo</span>
+                        <span class="card-title">Text Justification [hard]</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
@@ -1075,15 +1104,35 @@
                     </div>
                     <div class="publish-info">
                             <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2021-09-04
+                                <i class="far fa-clock fa-fw icon-date"></i>2021-09-09
                             </span>
                         <span class="publish-author">
                             
-                            <i class="fas fa-user fa-fw"></i>
-                            Whatcoldwind
+                            <i class="fas fa-bookmark fa-fw icon-category"></i>
+                            
+                            <a href="/categories/Daily-train/" class="post-category">
+                                    Daily train
+                                </a>
+                            
+                            <a href="/categories/Daily-train/Algortihm/" class="post-category">
+                                    Algortihm
+                                </a>
+                            
                             
                         </span>
                     </div>
+                </div>
+                
+                <div class="card-action article-tags">
+                    
+                    <a href="/tags/LeetCode/">
+                        <span class="chip bg-color">LeetCode</span>
+                    </a>
+                    
+                    <a href="/tags/Greedy-strategy/">
+                        <span class="chip bg-color">Greedy strategy</span>
+                    </a>
+                    
                 </div>
                 
             </div>
