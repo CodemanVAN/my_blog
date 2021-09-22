@@ -4,13 +4,27 @@
   
     
     <entry>
-      <title>A novel Crawler</title>
+      <title>How to learn python effectively</title>
       <link href="/2021/09/22/A-novel-Crawler/"/>
       <url>/2021/09/22/A-novel-Crawler/</url>
       
         <content type="html"><![CDATA[<h1 id="Introduction"><a href="#Introduction" class="headerlink" title="Introduction"></a>Introduction</h1><p><em><strong>One of my friend started learn python, He asked me how to learn python quickly and effectively. I answered that just skip the traditional steps and concept such as basic grammar like for loop etc. Start with a specific project is the best way to learn python. And I recommend a video maker to him so that he to looking for a good project to follow. And he choosen a Novel Crawler project. I thought I have no new idea and project to busy on, so why don’t program one by myself. So I started this project and finished it in 4 hours recorded by wakatime</strong></em><br></p><h5 id="May-you’ll-ask-why-a-new-should-skip-the-traditional-step-and-start-with-a-project"><a href="#May-you’ll-ask-why-a-new-should-skip-the-traditional-step-and-start-with-a-project" class="headerlink" title="May you’ll ask why a new should skip the traditional step and start with a project"></a>May you’ll ask why a new should skip the traditional step and start with a project</h5><h6 id="Here-are-the-reasons"><a href="#Here-are-the-reasons" class="headerlink" title="Here are the reasons."></a>Here are the reasons.</h6><ul><li>you have learn C language or Java. You don’t have to learn the concept that same in any program language. If you learn it again. you will learn nothing but wasted your time. It’s such uneffective and boring.</li><li>Start a project you will come across bug, and try to solve it by yourself, the bug-solve ability is the most important skill for a coder, program language just a tool, you’re the man to use it, so you should write it with you mind. When it won’t work you should be able to find out why and fix it. That is the key point.</li><li>Once you finnaly make it work, you will be pround with yourself, you will have a motion that make you keep learning. The hardest part  is can’t get the reward in time when learning sometiong new, then you will lost your patientce and easily to give up.</li><li>A project contain the common knowledge that you often use and the whole project will cost a couple day to finish, you will automatically learn it when you typing keyboard.</li></ul><p><em>In the end, here is my novel Crawler <a href="https://github.com/CodemanVAN/novel-crawler">repository</a></em><br><br><strong>By the way, I still insist on my daily train but recent I think if I have know how to solve a problem then it’s unnecessary that post it in blog. So when I can figue out the daily problem, I will post it in my blog to remmber it. Not for being lazing.XD</strong></p>]]></content>
       
       
+      <categories>
+          
+          <category> Python </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> Python </tag>
+            
+            <tag> Crawler </tag>
+            
+        </tags>
       
     </entry>
     
